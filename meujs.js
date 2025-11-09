@@ -41,7 +41,7 @@ for(ind = 0; ind < numerodecasas;ind++){
     lis.setAttribute("id", `pecas${ind}`)
     tabuleiro.appendChild(ul)
     ul.appendChild(lis)
-    lis.style.cssText = "width: 30px; height: 30px;background: yellow;border: 1px solid whitesmoke"   
+    lis.style.cssText = "width: 30px; height: 30px"   
     const jogador1 = "X"
     const jogador2 = "O"
     nota.textContent = "Começa as bolas, depois as cruzes, um a vez..."
@@ -155,7 +155,7 @@ for(ind = 0; ind < numerodecasas;ind++){
                     li7.style.background += "grey"
                     ganho = jogador2
                     ganhou = true
-                }else if(li2.textContent == jogador1 && li5.textContent == jogador1 && li8.textContent == jogador1){
+                }else if(li2.textContent == jogador1 && li5.textContent == jogador1 && li7.textContent == jogador1){
                     nota.textContent = "jogador 1 ganhou"
                     
                     li5.style.background += "grey"
@@ -163,7 +163,7 @@ for(ind = 0; ind < numerodecasas;ind++){
                     li8.style.background += "grey"
                     ganho = jogador1
                     ganhou = true
-                }else if(li2.textContent == jogador2 && li5.textContent == jogador2 && li8.textContent == jogador2){
+                }else if(li2.textContent == jogador2 && li5.textContent == jogador2 && li7.textContent == jogador2){
                     nota.textContent = "jogador 2 ganhou"
                     
                     li5.style.background += "grey"

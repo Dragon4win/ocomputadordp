@@ -56,16 +56,47 @@ body{
     100%{width: 0;}
 }
 #tab ul{
-    width: 96px;
+    width: 130px;
     height: 90px;
     margin: 0;
-    padding: 0;
+    padding: 15px;
     list-style: none;
     margin: 0 auto;
 }
 .pecas{
     float: left;
     padding: 5px;
+}
+.pecas{
+    border: 1px solid black;
+}
+#pecas0{
+    border-top: none !important;
+    border-left: none !important;
+}
+#pecas1{
+    border-top: none !important;
+}
+#pecas2{
+    border-top: none !important;
+    border-right: none !important;
+}
+#pecas3{
+    border-left: none !important;
+}
+#pecas5{
+    border-right: none !important;
+}
+#pecas6{
+    border-bottom: none !important;
+    border-left: none !important;
+}
+#pecas7{
+    border-bottom: none !important;
+}
+#pecas8{
+    border-bottom: none !important;
+    border-right: none !important;
 }
 *{
     box-sizing: border-box;
