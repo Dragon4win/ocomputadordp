@@ -1,0 +1,110 @@
+body{
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+.fixeddp{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(255, 192, 203, 0.514);
+    text-align: center;
+}
+.nome{
+    padding: 18% 0 0 0;
+}
+#flys{
+    position: absolute;
+    bottom: -10px;
+    width: 100%;
+    height: 80vh;
+}
+#flyers, #flyers2{
+    position: absolute;
+    bottom: -10px;
+    width: 25px;
+    height: 25px;
+    transform: rotate(45deg);
+    animation: subir 10s, girar 5s,drt 10s, crescer 10s;
+}
+#flyers2{
+    animation: subir 10s, girar 5s,esq 10s, crescer 10s;
+}
+@keyframes subir {
+    0%{bottom: 0px;}
+    25%{bottom: 700px}
+    100%{bottom: 0px;}
+}
+@keyframes girar {
+    0%{transform: rotate(45deg);}
+    100%{transform: rotate(360deg);}
+}
+@keyframes esq {
+    0%{left: 0;}
+    100%{left: 65px;}
+}
+@keyframes drt {
+    0%{right: 0px;}
+    100%{right: 65px;}
+}
+@keyframes crescer {
+    0%{width: 0;}
+    50%{width: 25px;}
+    100%{width: 0;}
+}
+#tab ul{
+    width: 130px;
+    height: 90px;
+    margin: 0;
+    padding: 15px;
+    list-style: none;
+    margin: 0 auto;
+}
+.pecas{
+    float: left;
+    padding: 5px;
+}
+.pecas{
+    border: 1px solid black;
+}
+#pecas0{
+    border-top: none !important;
+    border-left: none !important;
+}
+#pecas1{
+    border-top: none !important;
+}
+#pecas2{
+    border-top: none !important;
+    border-right: none !important;
+}
+#pecas3{
+    border-left: none !important;
+}
+#pecas5{
+    border-right: none !important;
+}
+#pecas6{
+    border-bottom: none !important;
+    border-left: none !important;
+}
+#pecas7{
+    border-bottom: none !important;
+}
+#pecas8{
+    border-bottom: none !important;
+    border-right: none !important;
+}
+*{
+    box-sizing: border-box;
+}
+#tab {
+    display: inline-block;
+    align-items: flex-start;
+    width: 100%;
+    text-align: center;
+    padding: 30px;
+}
